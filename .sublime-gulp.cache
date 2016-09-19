@@ -1,0 +1,1 @@
+{"C:\\Users\\igrek\\Desktop\\my_project-master\\gulpfile.js":{"sha1":"6aeb3b05859bb053fce4574e80387ec28861784a","tasks":{"browser-sync":{"name":"browser-sync","dependencies":"styles"},"styles":{"name":"styles","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"browser-sync watch"}}}}
