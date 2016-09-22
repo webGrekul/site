@@ -4,8 +4,9 @@ var gulp        = require('gulp'),
     cleanCSS    = require('gulp-clean-css'),
     rename      = require('gulp-rename'),
     concat      = require('gulp-concat'),
-    uglify      = require('gulp-uglify');
-    path        = require('path');
+    uglify      = require('gulp-uglify'),
+    path        = require('path'),
+    browserSync = require('browser-sync');
 
 
 var config = {
@@ -15,15 +16,27 @@ var config = {
     publicDir: './app',
 };
 
-gulp.task('browser-sync', ['styles'], function() {
-    var browserSync = require('browser-sync').create();
-    browserSync.init({
+gulp.task('browser-sync', ['styles', 'scripts'], function() {
+    browserSync({
         server: {
-                    baseDir: config.publicDir
-                },
+            baseDir: config.publicDir,
+            baseDir: 'app'
+        },
         notify: false
     });
 });
+
+gulp.task('scripts', function() {
+	return gulp.src([
+        'app/libs/jquery/jquery-1.11.2.min.js',
+        'app/libs//bootstrap/js/bootstrap.min.js',
+		'app/js/material.min.js',
+		// 'app/libs/magnific-popup/magnific-popup.min.js'
+		])
+		.pipe(concat('libs.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('app/js'));
+})
 
 gulp.task('styles', function () {
     return gulp.src('src/sass/mixins_all.sass')
@@ -36,14 +49,17 @@ gulp.task('styles', function () {
         ]
     }).on('error', sass.logError))
     .pipe(rename({basename: 'main2', prefix : ''}))
-// .pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
+    .pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
 // .pipe(cleanCSS())
     .pipe(gulp.dest(config.publicDir + '/css'))
-    //.pipe(browserSync.stream());
+    .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('watch', function () {
-    gulp.watch(['src/sass/*.sass', 'app/sass/**/*.sass',], ['styles']);
+gulp.task('watch',['styles'], function () {
+    gulp.watch(['src/sass/*.sass', 'app/sass/**/*.sass'],browserSync.reload);
+    gulp.watch('app/*.html',browserSync.reload);
+    gulp.watch('app/css/**/*/css',browserSync.reload);
+    gulp.watch('app/js/**/*.js',browserSync.reload);
 });
 
-gulp.task('default', [ 'browser-sync', 'watch']);
+gulp.task('default', ['browser-sync', 'watch']);
