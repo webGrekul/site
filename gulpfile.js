@@ -55,11 +55,9 @@ gulp.task('styles', function () {
     .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('watch',['styles'], function () {
-    gulp.watch(['src/sass/*.sass', 'app/sass/**/*.sass'],browserSync.reload);
-    gulp.watch('app/*.html',browserSync.reload);
-    gulp.watch('app/css/**/*/css',browserSync.reload);
-    gulp.watch('app/js/**/*.js',browserSync.reload);
+gulp.task('watch', function () {
+gulp.watch(['src/sass/*.sass', 'src/sass/**/*.sass', 'src/sass/**/*.scss' ], ['styles'],browserSync.reload);
+gulp.watch(['app/*.html'],browserSync.reload);
+gulp.watch(['app/js/**/*.js'],browserSync.reload);
 });
-
 gulp.task('default', ['browser-sync', 'watch']);

@@ -49,3 +49,88 @@ SyntaxError: missing ) after argument list
     at require (internal/module.js:20:19)
     at requireGulp (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
     at Object.<anonymous> (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:83:12)
+
+
+09-23-2016 10:00:
+C:\Users\igrek\Documents\GitHub\site\.sublime-gulp-tmp.js:64
+});
+  ^
+SyntaxError: Unexpected end of input
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:528:28)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+    at Object.<anonymous> (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:83:12)
+
+
+09-23-2016 10:00:
+C:\Users\igrek\Documents\GitHub\site\.sublime-gulp-tmp.js:64
+});
+  ^
+SyntaxError: Unexpected end of input
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:528:28)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+    at Object.<anonymous> (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:83:12)
+
+
+09-23-2016 10:00:
+C:\Users\igrek\Documents\GitHub\site\.sublime-gulp-tmp.js:64
+});
+  ^
+SyntaxError: Unexpected end of input
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:528:28)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+    at Object.<anonymous> (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:83:12)
+
+
+09-23-2016 10:02:
+C:\Users\igrek\Documents\GitHub\site\.sublime-gulp-tmp.js:64
+});
+  ^
+SyntaxError: Unexpected end of input
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:528:28)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+    at Object.<anonymous> (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:83:12)
+
+
+09-23-2016 10:55:
+C:\Users\igrek\Documents\GitHub\site\.sublime-gulp-tmp.js:59
+gulp.watch(['src/sass/*.sass', 'src/sass/**/*.sass', 'src/sass/**/*.scss' ], ['styles'], .pipe(browserSync.reload);
+                                                                                         ^
+SyntaxError: Unexpected token .
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:528:28)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at requireGulp (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+    at Object.<anonymous> (C:\Users\igrek\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:83:12)

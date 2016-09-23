@@ -2144,39 +2144,6 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-.btn {
-  border: none;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  position: relative;
-  padding: 12px 30px;
-  margin: 10px 1px;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  will-change: box-shadow, transform;
-  -webkit-transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
-  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1); }
-
-.btn:active, .btn.btn-default:active, .btn.btn-default:focus, .btn:focus {
-  background-color: #999999;
-  color: #FFFFFF; }
-
-.ripple-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  -webkit-border-radius: inherit;
-  border-radius: inherit;
-  pointer-events: none; }
-
 /** Bootstrap **/
 .fade {
   opacity: 0;
@@ -2318,6 +2285,18 @@ input[type="button"].btn-block {
   top: auto;
   bottom: 100%;
   margin-bottom: 2px; }
+
+.dropdown .dropdown-menu {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0; }
+
+.dropdown.open .dropdown-menu {
+  max-height: 200px;
+  opacity: 1; }
 
 .btn-group,
 .btn-group-vertical {
@@ -4918,8 +4897,20 @@ a.text-danger:focus, a.text-danger:hover {
   .hidden-print {
     display: none !important; } }
 
-#myCarousel .nav a small {
-  display: block; }
+h1 {
+  font-size: 80px; }
+
+.top_head {
+  height: 40px;
+  background-color: #191919; }
+
+.socilal_block a i {
+  padding-top: 2px;
+  font-size: 16px;
+  color: #fff; }
+
+body {
+  background-color: #000; }
 
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
